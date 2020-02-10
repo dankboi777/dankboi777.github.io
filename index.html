@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Yeah boi</title>
-    <style>
-      body {background-color: powderblue;
-            font-family: "courier new";}
-    </style>
-  </head>
-  <body>
-    <h1>Welcome to my website</h1>
-    <p>I'm dankboi777 and this is my website.</p>
-  </body>
+<head>
+	<style>
+		.button {
+		    background-color: #2b2727; /* Green */
+		    border-radius: 12px;
+		    color: #FE6700;
+		    padding: 12px 28px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    float: center;
+		    border: 1px black
+		    
+		}
+		.headr {
+			text-align: center;
+    		text-transform: uppercase;
+    		color: #FE6700;
+		}
+		.paragraph {
+			text-align: center;
+			color: #FE6700;
+		}
+	</style>
+	<title>Rock Paper Scissors</title>
+	<script src="rps.js"></script>
+</head>
+<body bgcolor="#676565">
+	<h1 class="headr">Rock Paper Scissors</h1>
+	<center>
+	<button class="button" type="button" id="r" onclick="reset(); aa(); comp(); check()">Rock</button>
+	<button class="button" type="button" id="p" onclick="reset(); bb(); comp(); check()">Paper</button>
+	<button class="button" type="button" id="s" onclick="reset(); cc(); comp(); check()">Scissors</button>
+	<p id="player" class="paragraph">Play a game</p>
+	<p id="para" class="paragraph"></p>
+	<p id="game" class="paragraph"></p>
+	</center>
+</body>
 </html>
